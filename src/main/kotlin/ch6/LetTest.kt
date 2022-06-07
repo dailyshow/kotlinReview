@@ -14,6 +14,7 @@ fun main() {
 
     // let 을 사용해 null 검사
     // let 을 이용하면 null 검사를 편하게 할 수 있다.
+    // 하지만 자바로 디컴파일 하면 결과적으로는 if 안에서 null 인지 체크하는것과 같기 때문에 굳이 let 을 이용해서 검사할 필요 없음.
     fun checkScoreLet() {
         score?.let { println("score : $it") } ?: println("score 는 null 이당")
         val str = score.let { it.toString() }
